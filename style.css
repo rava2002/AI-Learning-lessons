@@ -75,3 +75,11 @@ footer{border-top:1px solid var(--line);background:linear-gradient(100deg,var(--
 .other-resources>p{padding:16px 16px 0;margin:0}
 .stage-body .other-resources>.resource-grid{margin:14px 16px 16px}
 @media(max-width:760px){.stage .other-resources>summary{padding:14px;gap:10px;font-size:14px}.stage .other-resources>summary::after{content:none!important}.stage-body .other-resources>.resource-grid{margin:12px}}
+/* Give onboarding a clear visual priority without competing with study progress. */
+.start-guide{border:2px solid #6939b8;border-left-width:6px;background:linear-gradient(120deg,var(--violet-wash),var(--panel));box-shadow:0 6px 20px #6939b814}
+.start-guide>summary .badge{background:#6939b8;color:white;letter-spacing:.5px}
+.start-guide h2{font-size:25px}.start-guide>summary .muted{display:block;max-width:680px;font-size:14px}
+.start-guide .guide-toggle::before{content:'＋'}.start-guide[open] .guide-toggle::before{content:'−'}
+.start-guide .guide-toggle{display:grid;place-items:center;flex-shrink:0;width:40px;height:40px;border-radius:10px;background:var(--panel);color:var(--text)}
+.focus-card h2{font-size:23px}.roadmap-cta{white-space:nowrap;font-size:14px}.section-title{flex-wrap:wrap}
+@media(max-width:760px){.start-guide h2{font-size:23px}.roadmap-cta{width:100%;margin-top:12px}.page-head .roadmap-cta{margin-top:18px}.section-title{gap:4px}}
